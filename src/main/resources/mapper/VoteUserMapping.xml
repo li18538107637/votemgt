@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cnstock.vote.dao.VoteUserDao">
+    <select id="getVoteUserByUserId" parameterType="String" resultType="VoteUserDto">
+        select * from vote_user where user_id = #{userId};
+    </select>
+</mapper>
